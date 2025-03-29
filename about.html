@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: rgb(153, 0, 255);
+            text-decoration: none;
+        }
+
+        .bg-img {
+            /* The image used */
+            background-image: url("img_nature.jpg");
+            min-height: 380px;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Needed to position the navbar */
+            position: relative;
+        }
+
+        /* Position the navbar container inside the image */
+        .container {
+            margin: 20px;
+            width: auto;
+        }
+
+        /* The navbar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Navbar links */
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-theme {
+            color: white;
+            background-color: black;
+        }
+
+        button {
+            width: 20rem;
+            height: 5rem;
+            font-size: 1.5rem;
+            background-color: rgb(102, 102, 102);
+            border: solid;
+            border-radius: 12px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 15px;
+            height: 460px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function changeMode() {
+            var body = document.body;
+            // toggle the theme
+            body.classList.toggle("dark-theme");
+            let button = document.getElementById('button');
+            // change the button text
+            if (button.innerHTML === "Dark Mode") {
+                button.innerHTML = "Normal Mode";
+            } else {
+                button.innerHTML = "Dark Mode";
+            }
+        }
+    </script>
+    <section style="top:140px;">
+        <img src="Img/download.png" alt="error" width="250" style="float: left">
+        <img src="Img/jk.png" alt="error" width="270" style="float: right">
+        <br>
+        <h1>Welcome to SPSU (Udaipur)</h1>
+        <br>
+        <div class="container">
+            <div class="topnav">
+
+                <a href="first.html" target="_blank">Home</a>
+                <a href="a.html" target="_blank">Admission</a>
+                <a href="file/Brosher.pdf" download target="_blank">Download Brochure</a>
+                <a href="#mode" onclick="changeMode()">Mode</a>
+                <a href="about.html" target="_blank">About</a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h2>Images</h2>
+    <button onclick="window.open('https://www.google.com/search?q=spsu+udaipur&sxsrf=APwXEde2SLTj7tyv4hn7Z1vLJlnnrDiLiA:1686043784419&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiy9uHGqq7_AhXY7TgGHadiAsIQ_AUoAXoECAMQAw&biw=1280&bih=573&dpr=1.5', '_blank')"><font size="4">Images</font></button>
+    <h2>Contact</h2>
+    <button onclick="window.open('https://api.whatsapp.com/send?phone=919509627697&text=I+would+like+to+know+more+', '_blank')"><font size="4">WhatsApp</font></button>
+    <h2>Social Media</h2>
+    <button onclick="window.open('https://www.facebook.com/spsuofficial', '_blank')"><font size="4">Facebook</font></button>
+    <button onclick="window.open('https://www.youtube.com/channel/UC8obPl4D4BCLGEmu9ynvw0Q/featured', '_blank')"><font size="4">YouTube</font></button>
+    <button onclick="window.open('https://www.instagram.com/spsuofficial', '_blank')"><font size="4">Instagram</font></button>
+    <button onclick="window.open('https://www.linkedin.com/authwall?trk=gf&trkInfo=AQF2fU2aXtPlpgAAAYiQJ_IIVIhe6B3Hu1Nzl3h6Pbhta2okKi63iJanpzqzNBO_lCTpxslyJU4itvkDo1CrX_smFAZsf7xI03eJvSbBgwSxfH9mXXafb0eujjiMuYzx1KX3FKY=&original_referer=https://spsu.ac.in/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fspsuofficial%2F', '_blank')"><font size="4">Linkedin</font></button>
+    <h2>Overview</h2>
+    <p style="font-size:medium;">It is nearly half a century since the late Sir Padampat Singhania, the visionary founder of the JK Organization,
+        dreamt of an empowered Indian populace, through whom India would take its place as an equal in the comity of
+        nations. According to him, empowerment presupposes education and knowledge. That became the cornerstone of the
+        organization’s philosophy for discharging its social responsibility and JK Cement Ltd. Nimbahera Foundation
+        (JKCNF) was born. Over time, involvement in education became stronger and deeper. Today, two decades later, it
+        is associated with twelve educational institutions imparting education to nearly 14,000 students at various
+        levels of the learning curve. The JK Cement Ltd. and Nimbahera Foundation envisioned the establishment of
+        world-class university in Rajasthan benchmarked to international educational institutions. The Foundation
+        constituted a think tank of eminent people from industry, science and technology, and academia who prepared the
+        blueprint of the University. The University is committed to academic excellence, entrepreneurial spirit,
+        diversity, vibrancy, and creativity.</p>
+    <button onclick="window.open('first.html', '_blank')">GO Back</button>
+    
+
+    <div class="content display-container">
+        <img class="mySlides" src="Img/1 (1).png" style="width:100%" height="400px">
+        <img class="mySlides" src="Img/1 (2).png" style="width:100%" height="400px">
+        <img class="mySlides" src="Img/1 (4).png" style="width:100%" height="400px">
+        <img class="mySlides" src="Img/1 (5).png" style="width:100%" height="400px">
+
+        <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        setInterval(function () {
+            plusDivs(1);
+        }, 3000);
+    </script>
+
+    <hr>
+    <br>
+    <div style="color: black;">
+        <div class="input-group">
+            <span class="input-group-text" id="input-group-left-example"></span>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:rgb(1, 99, 16);">
+                <img src="Img/logo.webp" alt="Postgraduate Programs" style="width: 300px; height: auto;">
+                <div style="padding: 15px;">
+                    <section>
+                        <h3>Quick Links:</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/spsuofficial">Facebook.com</a></li>
+                            <li><a href="https://www.instagram.com/spsuofficial/">Instagram.com</a></li>
+                            <li><a
+                                    href="https://api.whatsapp.com/send?phone=919509627697&text=I+would+like+to+know+more+">
+                                    WhatsApp.com</a></li>
+                            <li><a
+                                    href="https://www.youtube.com/channel/UC8obPl4D4BCLGEmu9ynvw0Q/featured">YouTube.com</a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/school/spsu/">LinkedIn.com</a></li>
+                            <li><a href="https://www.twitter.com/spsuofficial/">Twitter.com</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="column" style="background-color:rgb(1, 99, 16);">
+                <img src="Img/download.jpeg" alt="Contact" style="width: 100%; height: 170px;">
+                <div style="padding: 15px;">
+                    <h3>Contact Us:</h3>
+                    <p><b>Address:</b> NH-76, Near Toll Plaza, Chittor Road, Udaipur, Rajasthan - 313001</p>
+                    <p><b>Email:</b> info@spsu.ac.in</p>
+                    <p><b>Phone:</b> +91 294 2797224/25/26</p>
+                    <p><b>Fax:</b> +91 294 2797203</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <footer style="background-color: rgb(25, 25, 25); color: white; padding: 20px;">
+            <center>
+                <p style="margin-bottom: 0;">&copy; 2023 SPSU. All rights reserved.</p>
+                <p style="font-size: 14px;">Website designed by Ayushman Sharma(SPSU Web Team)</p>
+            </center>
+        </footer>
+</body>
+
+</html>
